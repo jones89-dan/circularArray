@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=QueueInterface
+comment1.params=element
+comment1.target=void\ insert(java.lang.Object)
+comment2.params=
+comment2.target=java.lang.Object\ remove()
+comment3.params=
+comment3.target=java.lang.Boolean\ isEmpty()
+numComments=4
