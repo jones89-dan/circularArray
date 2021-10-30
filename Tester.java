@@ -22,9 +22,9 @@ public class Tester
             q.insert('!');
         }
         catch (QueueOverflowException overflow) {
-        System.out.println("Exception: " + overflow.getMessage());
-        System.err.println("Exception: " + overflow.getMessage());
-//        System.exit(2);
+            System.out.println("Exception: " + overflow.getMessage());
+            System.err.println("Exception: " + overflow.getMessage());
+            //System.exit(2);
         }
 
         //empty the queue

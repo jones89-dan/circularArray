@@ -23,4 +23,19 @@ public class ArrayQueue<T> implements QueueInterface<T>
     
     //implement your methods with Javadoc comments here
     //again, you are NOT ALLOWED to add more instance variables
+    
+    public void insert(T element) throws QueueOverflowException
+    {
+        
+    }
+    
+    public T remove() throws QueueUnderflowException
+    {
+
+    }
+    
+    public Boolean isEmpty()
+    {
+        return true;
+    }
 }
