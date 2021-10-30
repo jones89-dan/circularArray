@@ -26,16 +26,25 @@ public class ArrayQueue<T> implements QueueInterface<T>
     
     public void insert(T element) throws QueueOverflowException
     {
-        
+        if (isFull())
+            throw new QueueOverflowException ("Queue overflow"); 
+        rear = rear + 1; 
+        elements[rear] = element;
     }
     
     public T remove() throws QueueUnderflowException
     {
-
+        return elements[0];
     }
     
     public Boolean isEmpty()
     {
-        return true;
+        return rear == front;
+    }
+    
+    public Boolean isFull()
+    {
+        return front + 1 == rear;
+            
     }
 }
