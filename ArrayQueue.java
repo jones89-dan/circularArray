@@ -28,7 +28,12 @@ public class ArrayQueue<T> implements QueueInterface<T>
     {
         if (isFull())
             throw new QueueOverflowException ("Queue overflow"); 
-        rear = rear + 1; 
+            
+        if (rear == MAX - 1) 
+            rear = 0; //wrap queue round to beginning of array 
+        else 
+            rear = rear + 1; 
+            
         elements[rear] = element;
     }
     
@@ -44,7 +49,7 @@ public class ArrayQueue<T> implements QueueInterface<T>
     
     public Boolean isFull()
     {
-        return front + 1 == rear;
+        return rear + 1 == front;
             
     }
 }

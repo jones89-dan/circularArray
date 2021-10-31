@@ -9,5 +9,5 @@ comment3.target=java.lang.Object\ remove()
 comment4.params=
 comment4.target=java.lang.Boolean\ isEmpty()
 comment5.params=
-comment5.target=boolean\ isFull()
+comment5.target=java.lang.Boolean\ isFull()
 numComments=6
