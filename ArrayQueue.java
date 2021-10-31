@@ -39,7 +39,17 @@ public class ArrayQueue<T> implements QueueInterface<T>
     
     public T remove() throws QueueUnderflowException
     {
-        return elements[0];
+        if (isEmpty())
+            throw new QueueUnderflowException ("Queue underflow"); 
+       
+        if (front == MAX - 1)
+            front = 0;
+        else
+            front = front + 1; 
+        
+        T temp = elements[front];
+        
+        return temp;
     }
     
     public Boolean isEmpty()
